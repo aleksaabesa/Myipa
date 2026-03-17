@@ -16,7 +16,7 @@ jobs:
       - name: Build IPA
         run: |
           cd build
-          cordova build ios --no-sign
+          cordova build ios --no-sign --device
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
